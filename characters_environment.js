@@ -311,7 +311,7 @@ function manualControl(character){
 
 /* Movimientos del personaje */
 function jumping(character){
-	if( (noseY < 168  &&character.live) || (touchIsDown&&character.live) ){
+	if( (noseY < 200  &&character.live) || (touchIsDown&&character.live) ){
     character.velocity.y+=gameConfig.jump;
     mario_jump.play();
 	}
